@@ -3,7 +3,7 @@ import { useDropzone } from "react-dropzone";
 import "../css/dropZone.css";
 import { Button } from "@mui/material";
 
-function FileDropzone({ onFileDrop }) {
+function FileDropzone({ onFileDrop, setFile, setSimBtn }) {
   const [selectedFile, setSelectedFile] = useState(null);
 
   const onDrop = (acceptedFiles) => {
@@ -23,6 +23,8 @@ function FileDropzone({ onFileDrop }) {
 
   const handleRemoveFile = () => {
     setSelectedFile(null); // Clear the selected file
+    setFile(null);
+    setSimBtn(false);
   };
 
   return (

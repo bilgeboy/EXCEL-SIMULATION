@@ -2,6 +2,8 @@
 venv
 .idea
 .gitignore copy
+BE/Export_1_2022.xls
+BE/Export_1_2022.xlsx
 
 # Logs
 logs
@@ -130,3 +132,4 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+BE/handlers/__pycache__/xlsx_handler.cpython-39.pyc
